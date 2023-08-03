@@ -41,7 +41,7 @@ Where [Weather AM] Like 'Sunny%'
 Order By 3 desc
 
 Alter Table WarehouseTemperature
-Add Condition Nvarchar(255);
+Add Condition Varchar(255);
 
 Update WarehouseTemperature
 Set Condition = SUBSTRING([Weather AM], 1, CHARINDEX(' ',[Weather AM]))
